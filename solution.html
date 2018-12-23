@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cubitcode</title>
+  <meta property="og:title" content="Cubitcode. Desarrollo software. helpdesk. Soporte. Gnu/linux.">
+  <meta property="og:description" content="Investigación, desarrollo e innovación para las nuevas tecnologías informaticas">
+  <meta property="og:url" content="https://www.cubitcode.com/">
+  <meta property="og:site_name" content="CubitCode">
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/fonts.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+  <!-- FAVICON -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#16809e">
+  <link rel="shortcut icon" href="favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-config" content="favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- FUENTE -->
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <!-- DESPLEGABLE NAV MOVIL -->
+  <ul id="slide-out" class="sidenav">
+    <li>
+      <a href="index.html">Inicio</a>
+      <a href="about.html">Sobre Nosotros</a>
+      <a class="dropdown-btn">Soluciones<i class="material-icons right">arrow_drop_down</i></a>
+      <ul class="dropdown-container">
+        <li>
+          <a href="soluciones/desarrollo.html">
+            <img id="icons_soluciones_tiny" class="alineadoTextoImagenCentro" src="icons/software.png">
+            Desarrollo de software
+          </a>
+
+          <a href="soluciones/redes.html">
+            <img id="icons_soluciones_tiny" class="alineadoTextoImagenCentro" src="icons/redes.png">
+            Redes y Conectividad
+          </a>
+
+          <a href="soluciones/capacitacion.html">
+            <img id="icons_soluciones_tiny" class="alineadoTextoImagenCentro" src="icons/capacitacion.png">
+            Capacitación TI
+          </a>
+
+          <a href="soluciones/helpdesk.html">
+            <img id="icons_soluciones_tiny" class="alineadoTextoImagenCentro" src="icons/help.png">
+            Mesa de ayuda
+          </a>
+
+          <a href="soluciones/consultoria.html">
+            <img id="icons_soluciones_tiny" class="alineadoTextoImagenCentro" src="icons/consultin.png">
+            Consultoria
+          </a>
+
+          <a href="soluciones/soporte.html">
+            <img id="icons_soluciones_tiny" class="alineadoTextoImagenCentro" src="icons/soporte.png">
+            Soporte técnico
+          </a>
+        </li>
+      </ul>
+
+      <a href="news.html">Noticias</a>
+      <a href="contact.html">Contáctanos</a>
+    </li>
+  </ul>
+
+  <!-- Estructura del NAV desktop -->
+  <div class="navbar-fixed">
+
+    <!-- Dropdown Structure desplegable - soluciones -->
+    <ul id="dropdown1" class="dropdown-content">
+      <li><a class="grey-text text-darken-2" href="soluciones/desarrollo.html">Desarrollo de software</a></li>
+      <li><a class="grey-text text-darken-2" href="soluciones/redes.html">Redes y Conectividad</a></li>
+
+      <li><a class="grey-text text-darken-2" href="soluciones/capacitacion.html">Capacitación TI</a></li>
+      <li><a class="grey-text text-darken-2" href="soluciones/helpdesk.html">Mesa de ayuda</a></li>
+      <li><a class="grey-text text-darken-2" href="soluciones/consultoria.html">Consultoria</a></li>
+      <li><a class="grey-text text-darken-2" href="soluciones/soporte.html">Soporte técnico</a></li>
+    </ul>
+    <!-- fin Dropdown Structure -->
+
+    <nav class="white" role="navigation">
+      <div class="nav-wrapper container">
+
+        <a id="logo-cubitcode" href="index.html">
+          <img class="brand-logo left" src="img/logo.png" alt="">
+        </a>
+
+        <!--<ul class="left">
+                  <li><a style="font-weight: bold; font-size: 20px;" href="index.html">Cubitcode</a></li>
+                </ul>
+              -->
+        <a href="#" data-target="slide-out" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+
+          <li><a href="about.html">Sobre Nosotros</a></li>
+          <li><a class="dropdown-trigger" href="solution.html" data-target="dropdown1">Soluciones<i class="material-icons right">arrow_drop_down</i></a></li>
+          <li><a href="news.html">Noticias</a></li>
+          <li><a href="contact.html">Contáctanos</a></li>
+        </ul>
+
+      </div>
+    </nav>
+  </div>
+
+  <!-- NAV FRANJA AZUL -->
+  <nav class="light-blue darken-4">
+    <div class="nav-wrapper container">
+      <div class="col s12">
+        <a href="index.html" class="breadcrumb">Inicio</a>
+        <a href="contact.html" class="breadcrumb">Soluciones</a>
+
+      </div>
+    </div>
+  </nav>
+  <!-- FIN NAV FRANJA AZUL -->
+
+
+  <!-- BANNER -->
+  <div id="index-banner" class="parallax-container valign-wrapper sombra_imagen">
+
+    <div class="parallax"><img id="sombra_i" src="img/soluciones_2.jpg" alt="Unsplashed background img 1"></div>
+
+    <div class="section no-pad-bot">
+
+      <div class="container">
+        <h1 class="header center white-text">Asegure su crecimiento</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">Con nuestra experiencia podrás hacer más competitivos tus productos y
+            servicios, y optimizar tus procesos.</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BANNER DE INFORMACION -->
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h3>Soluciones tecnológicas</h3>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4 center">
+          <div class="icon-block">
+            <a href="soluciones/desarrollo.html">
+              <img id="icons_soluciones" class="" src="icons/software.png">
+            </a>
+            <h5 class="center"><a class="black-text" href="desarrollo.html">Desarrollo de software</a></h5>
+
+            <p class="light">Contamos con profesionales capacitados en desarrollo y mantenimiento de aplicaciones web.
+              Nosotros nos encargamos de hacer productivo el área de TI, nuestros clientes se focalizan en su negocio.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4 center">
+          <div class="icon-block">
+            <a href="soluciones/redes.html">
+              <img id="icons_soluciones" src="icons/redes.png">
+            </a>
+            <h5 class="center">Redes y Conectividad</h5>
+
+            <p class="light">Creamos una red ideal para nuestros clientes a mediano y largo plazo. Permitiendoles
+              centrarse en su negocio y brindándoles nuevas oportunidades con rapidez.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4 center">
+          <div class="icon-block">
+            <a class="" href="soluciones/capacitacion.html"><img id="icons_soluciones" src="icons/capacitacion.png">
+            </a>
+            <h5 class="center">Capacitación TI</h5>
+
+            <p class="light">Nuestra experiencia y metodología de enseñanza permite a nuestros clientes fortalecer su
+              desarrollo y mantenimiento de software e infraestructura.</p>
+
+          </div>
+        </div>
+
+
+
+      </div>
+      <div class="row">
+        <div class="col s12 m4 center">
+          <div class="icon-block">
+            <a class="" href="soluciones/helpdesk.html"><img id="icons_soluciones" src="icons/help.png">
+            </a>
+            <h5 class="center">Mesa de ayuda</h5>
+
+            <p class="light">Nuestra mesa de ayuda TI, brinda distintos tipos de servicios especializados para la
+              atención de consultas, requerimientos, incidencias y gestión de problemas que puedan presentarse en los
+              usuarios finales relacionados al manejo de los distintos recursos informáticos.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4 center">
+          <div class="icon-block">
+            <a class="" href="soluciones/consultoria.html"><img id="icons_soluciones" src="icons/consultin.png">
+
+            </a>
+            <h5 class="center">Consultoria</h5>
+
+            <p class="light">Sabemos lo cambiante que son las tecnologias, por ello investigamos constantemente las
+              nuevas tendencias tecnológicas para adaptarnos a los clientes mas exigentes.</p>
+
+          </div>
+        </div>
+
+        <div class="col s12 m4 center">
+          <div class="icon-block">
+            <a class="" href="soluciones/soporte.html"><img id="icons_soluciones" src="icons/soporte.png">
+
+            </a>
+            <h5 class="center">Soporte técnico de computadoras</h5>
+
+            <p class="light">Contamos con profesionales con conocimiento en hardware y software actuales, no encargamos
+              de configurar y diagnosticar computadoras, laptops e impresoras matriciales, instalación de software para
+              proteger el software y optimizar los equipos y la información.</p>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div id="index-banner" class="parallax-container sombra_imagen">
+    <div class="section no-pad-bot">
+      <div class="container">
+
+        <h1 class="header center white-text"></h1>
+        <div class="row center">
+          <h5 class="header col s12 light"></h5>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="parallax"><img src="img/soluciones_1.jpg" alt="Unsplashed background img 1"></div>
+
+  </div>
+
+
+
+  <!--fin de formulario-->
+
+
+  <!-- GRAN FOOTER -->
+  <footer class="page-footer light-blue darken-4 black-text">
+    <!-- PIE DE PAGINA -->
+    <div class="container margenes">
+      <div class="row">
+        <div class="col s12 m12 l4">
+
+          <h6 class="white-text texto_negrita">CONOCE MAS DE CUBITCODE</h6>
+          <div class="divider"></div>
+          <a class="white-text" href="about.html">
+            <p class="">Quiénes somos</p>
+          </a>
+          <a class="white-text" href="solution.html">
+            <p class="">Qué hacemos</p>
+          </a>
+
+        </div>
+        <div class="col s12 m12 l4 ">
+          <h6 class="white-text texto_negrita">POLÍTICAS</h6>
+          <div class="divider"></div>
+          <!-- Modal Trigger -->
+          <a class="white-text modal-trigger" href="#modal1">
+            <p>Términos y condiciones</p>
+          </a>
+
+          <!-- Modal Structure -->
+          <div id="modal1" class="modal">
+            <div class="modal-content">
+              <h4>Términos y condiciones</h4>
+              <br>
+              <p ALIGN="justify" class=" term">Debe leer cuidadosamente los siguientes términos y condiciones. La
+                compra
+                o uso de nuestros productos implica que usted ha leído y aceptado estos términos y condiciones. Las
+                plantillas ofrecidas en esta web son creadas, presentadas, cobradas y enviadas por TemplateHelp.com, a
+                través de sus propios sistemas técnicos (ajenos a Plantillas.com), y están sujetas a sus propios
+                términos
+                y condiciones.</p> <br>
+
+              <p class="term">
+                <strong> 2. Licencia</strong> </p> <br>
+
+              <p ALIGN="justify" class=" term"> Nuestro sitio web le concede una licencia limitada no exclusiva para
+                utilizar las plantillas web y otros productos vendidos en nuestro sitio web (los "productos") de
+                acuerdo
+                con estos términos y condiciones (la "licencia") acordados por nuestra compañía.</p>
+
+              <p class="term">
+                a) Uso limitado</p><br>
+
+              <p ALIGN="justify" class=" term"> Usted puede utilizar cada producto individual en un solo sitio web,
+                perteneciendo éste a usted o a su cliente. Para hacer otro proyecto con el mismo diseño, deberá comprar
+                la misma plantilla otra vez.</p>
+
+              <p class="term">
+                b) Modificacines</p><br>
+
+              <p ALIGN="justify" class=" term"> Se le autoriza a hacer cualquier modificación necesaria a nuestros
+                productos para adecuarlos a sus propósitos.</p>
+
+              <p class="term">
+                c) Uso no autorizado</p><br>
+
+              <p ALIGN="justify" class=" term"> Usted no puede colocar uno de nuestros productos, modificado o sin
+                modificar, en un disquete, CD, sitio web o ningún otro medio y ofrecerlos para la redistribución o
+                la reventa de ningún tipo sin el consentimiento previo por escrito de nuestra compañía.</p>
+
+              <p class="term">
+                d) Asignabilidad</p><br>
+
+              <p ALIGN="justify" class=" term"> Usted no puede sub-licenciar, asignar, o transferir esta licencia
+                a cualquier persona sin consentimiento escrito de nuestra compañía.</p>
+
+              <p class="term">
+                e) Propiedad</p><br>
+
+              <p ALIGN="justify" class=" term"> Usted no puede declarar propiedad intelectual o exclusiva a
+                ninguno de nuestros productos, modificado o sin modificar. Todos los productos son propiedad
+                independiente de los proveedores del contenido.
+
+                Nuestros productos se proporcionan “tal cual” sin ningún tipo de garantía, expresa o implícita.
+                En ningún caso seremos responsables de ningún daño incluyendo, pero no limitado a, daños
+                directos, indirectos, especiales, fortuitos o consecuentes u otras pérdidas resultantes del uso
+                o de la imposibilidad de utilizar nuestros productos.</p>
+
+
+              <p class="term">
+                <strong> 3. Política de reembolso</strong> </p> <br>
+
+              <p ALIGN="justify" class=" term"> Puesto que nuestra compañía está ofreciendo mercancías
+                irrevocables no-tangibles, no realizamos reembolsos después de que se envíe el producto, el
+                cual usted es responsable de entender antes de comprar cualquier artículo en nuestro sitio web.
+                Por favor, asegúrese de haber leído cuidadosamente la sección de las 'fuentes disponibles’.
+                Hacemos solamente excepciones con esta regla cuando la descripción no se ajusta al producto. El
+                plazo para cualquier solicitud de reembolso es de una semana después de la fecha de
+                adquisición.</p>
+
+              <p class="term">
+                <strong> 4. Comprobación antifraude</strong> </p> <br>
+
+              <p ALIGN="justify" class=" term"> La compra del cliente puede ser aplazada para la comprobación
+                antifraude manual durante 10-20 minutos. También puede ser suspendida por más tiempo (alrededor
+                de 20 horas) para una investigación más rigurosa, para evitar transacciones fraudulentas.</p>
+
+
+              <p class="term">
+                <strong> 5. Instalación de los productos</strong> </p> <br>
+
+              <p ALIGN="justify" class=" term"> La instalación de los productos que puedan requerirla
+                (osCommerce, etc.) no está incluida en el precio. Si necesita servicios de instalación, puede
+                contactar con nuestro Soporte Técnico.
+
+                Nuestra compañía se reserva los derechos de cambiar o de modificar estos términos sin previo
+                aviso..</p>
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class="modal-close waves-effect waves-green btn-flat">Aceptar</a>
+            </div>
+          </div>
+
+          <!--modal Politicas de privacidad-->
+          <!-- Modal Trigger -->
+          <a class="modal-trigger white-text" href="#modal2">
+            <p>Políticas de privacidad</p>
+          </a>
+
+          <!-- Modal Structure -->
+          <div id="modal2" class="modal">
+            <div class="modal-content">
+              <h4>Políticas de privacidad</h4>
+
+              <p ALIGN="justify" class=" term">El presente Política de Privacidad establece los términos en que
+                Cubitcode
+                usa y protege la información que es proporcionada por sus usuarios al momento de utilizar su sitio web.
+                Esta compañía está comprometida con la seguridad de los datos de sus usuarios. Cuando le pedimos llenar
+                los campos de información personal con la cual usted pueda ser identificado, lo hacemos asegurando que
+                sólo se empleará de acuerdo con los términos de este documento. Sin embargo esta Política de Privacidad
+                puede cambiar con el tiempo o ser actualizada por lo que le recomendamos y enfatizamos revisar
+                continuamente esta página para asegurarse que está de acuerdo con dichos cambios.</p> <br>
+              <p class="term"> <strong>Información que es recogida</strong></p> <br>
+              <p ALIGN="justify" class="term"> Nuestro sitio web podrá recoger información personal por ejemplo:
+                Nombre,
+                información de contacto como su dirección de correo electrónica e información demográfica. Así mismo
+                cuando sea necesario podrá ser requerida información específica para procesar algún pedido o realizar
+                una
+                entrega o facturación.</p> <br>
+              <p class="term"><strong>Uso de la información recogida</strong></p>
+              <p ALIGN="justify" class="term"> Nuestro sitio web emplea la información con el fin de proporcionar el
+                mejor servicio posible, particularmente para mantener un registro de usuarios, de pedidos en caso que
+                aplique, y mejorar nuestros productos y servicios. Es posible que sean enviados correos electrónicos
+                periódicamente a través de nuestro sitio con ofertas especiales, nuevos productos y otra información
+                publicitaria que consideremos relevante para usted o que pueda brindarle algún beneficio, estos correos
+                electrónicos serán enviados a la dirección que usted proporcione y podrán ser cancelados en cualquier
+                momento.
+                Cubitcode está altamente comprometido para cumplir con el compromiso de mantener su información segura.
+                Usamos los sistemas más avanzados y los actualizamos constantemente para asegurarnos que no exista
+                ningún
+                acceso no autorizado.</p> <br>
+
+              <p class="term"><strong>Cookies</strong></p> <br>
+              <p ALIGN="justify" class="term">Una cookie se refiere a un fichero que es enviado con la finalidad de
+                solicitar permiso para almacenarse en su ordenador, al aceptar dicho fichero se crea y la cookie sirve
+                entonces para tener información respecto al tráfico web, y también facilita las futuras visitas a una
+                web
+                recurrente. Otra función que tienen las cookies es que con ellas las web pueden reconocerte
+                individualmente y por tanto brindarte el mejor servicio personalizado de su web.
+                Nuestro sitio web emplea las cookies para poder identificar las páginas que son visitadas y su
+                frecuencia. Esta información es empleada únicamente para análisis estadístico y después la información
+                se
+                elimina de forma permanente. Usted puede eliminar las cookies en cualquier momento desde su ordenador.
+                Sin embargo las cookies ayudan a proporcionar un mejor servicio de los sitios web, estás no dan acceso
+                a
+                información de su ordenador ni de usted, a menos de que usted así lo quiera y la proporcione
+                directamente, visitas una web. Usted puede aceptar o negar el uso de cookies, sin embargo la mayoría de
+                navegadores aceptan cookies automáticamente pues sirve para tener un mejor servicio web. También usted
+                puede cambiar la configuración de su ordenador para declinar las cookies. Si se declinan es posible que
+                no pueda utilizar algunos de nuestros servicios.</p> <br>
+              <p class="term"><strong>Enlaces a Terceros</strong></p>
+              <p ALIGN="justify" class="term"> Este sitio web pudiera contener en laces a otros sitios que pudieran ser
+                de su interés. Una vez que usted de clic en estos enlaces y abandone nuestra página, ya no tenemos
+                control sobre al sitio al que es redirigido y por lo tanto no somos responsables de los términos o
+                privacidad ni de la protección de sus datos en esos otros sitios terceros. Dichos sitios están sujetos
+                a
+                sus propias políticas de privacidad por lo cual es recomendable que los consulte para confirmar que
+                usted
+                está de acuerdo con estas.
+                Control de su información personal
+                En cualquier momento usted puede restringir la recopilación o el uso de la información personal que es
+                proporcionada a nuestro sitio web. Cada vez que se le solicite rellenar un formulario, como el de alta
+                de
+                usuario, puede marcar o desmarcar la opción de recibir información por correo electrónico. En caso de
+                que
+                haya marcado la opción de recibir nuestro boletín o publicidad usted puede cancelarla en cualquier
+                momento.
+                Esta compañía no venderá, cederá ni distribuirá la información personal que es recopilada sin su
+                consentimiento, salvo que sea requerido por un juez con un orden judicial.
+                Cubitcode se reserva el derecho de cambiar los términos de la presente Política de Privacidad en
+                cualquier momento.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class="modal-close waves-effect waves-green btn-flat">Aceptar</a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col s12 m12 l4">
+
+          <h6 class="white-text texto_negrita">QUEREMOS SABER MAS DE TÍ</h6>
+          <div class="divider"></div>
+          <a href="contact.html">
+            <p class="white-text">Contáctanos:</p>
+
+          </a>
+
+          <p class="white-text"><i class="white-text tiny material-icons">smartphone</i> Movil: 941085775 / 928893177</p>
+          <p class="white-text"><i class="white-text tiny material-icons">place</i> Dirección: Av.Lizardo Montero 1188
+            - Surquillo</p>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ------------------ FOOTER ------------------ -->
+
+
+    <div class="container center">
+      <a class="social" href="https://www.facebook.com/Cubitcode-1878152385639269/" target="_blank">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+
+      <a class="social" href="https://www.instagram.com/cubitcodeteam/" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a class="social" href="https://www.youtube.com/channel/UC4ResMh9uYKz0Ys5Fvn-IIg" target="_blank">
+        <i class="fab fa-youtube"></i>
+      </a>
+      <a class="social" href="https://twitter.com/CubitcodeTEAM" target="_blank">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a class="social" href="" target="_blank">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+
+      <p class="copy"></p>
+    </div>
+    <div class="footer-copyright">
+      <div class="container center">
+        &copy; Cubitcode 2018 - Todos los derechos reservados
+      </div>
+    </div>
+
+
+  </footer>
+
+  <!--fin footer-->
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.modal');
+      var instances = M.Modal.init(elems);
+    });
+
+    // Or with jQuery
+
+    $(document).ready(function () {
+      $('.modal').modal();
+    });
+  </script>
+
+  <!-- SCRIPT RED SOCIAL CONTACT -->
+  <script type="text/javascript">
+    (function () {
+      var options = {
+        facebook: "1878152385639269", // Facebook page ID
+        whatsapp: "051941085775", // WhatsApp number
+        //viber: "sarmadgardezi", // Viber number
+        //snapchat: "sarmadgardezi", // Snapchat username
+        //line: "03001234567", // Line QR code URL
+        //telegram: "sarmadgardezi", // Telegram bot username
+        //vkontakte: "sarmadgardezi", // VKontakte page name
+        email: "admin@cubitcode.com", // Email
+        //sms: "sarmadgardezi", // Sms phone number
+        //call: "sarmadgardezi", // Call phone number
+        company_logo_url:
+          "//storage.whatshelp.io/widget/c6/c645/c645d712795dce40d99699dbed3910e3/30226238_1622056117908608_1444092385681565141_n.jpg",
+        // URL of company logo (png, jpg, gif)
+        greeting_message: "Hello, how may we help you? Just send us a message now to get assistance.",
+        // Text of greeting message
+        call_to_action: "Escríbenos un mensaje", // Call to action
+        button_color: "#FF6550", // Color of button
+        position: "right", // Position may be 'right' or 'left'
+        order: "facebook,whatsapp,viber,snapchat,line,telegram,vkontakte,sms,call,email", // Order of buttons
+      };
+      var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
+      var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+      s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+      var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+  </script>
+</body>
+
+</html>

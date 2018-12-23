@@ -1,0 +1,389 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+
+p {
+  line-height: 2rem;
+}
+
+.sidenav-trigger {
+  color: #01579b;
+}
+
+.full_screem {
+  height: 400px;
+}
+
+.borde_img {
+  border-radius: 3%;
+}
+
+#sombreado_img {
+  width: 50%;
+  height: auto;
+}
+
+
+/* ---------- ESTILOS DE INFO ---------- */
+.info__columna {
+  padding: 15px;
+  /*deja un espacio hacia abajo*/
+  margin-bottom: 0px;
+}
+
+/* ---------- ESTILO FB MESENGER ---------- */
+
+
+/*codificando clases que comiencen con icon- dentro de footer y social*/
+.social {
+  display: inline-block;
+  color: #333;
+  text-decoration: none;
+  font-size: 25px;
+  padding: 10px;
+  background: #fff;
+  /*haciendo fondo circular*/
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  line-height: 31px;
+  margin: 0 8px;
+}
+
+
+
+
+.parallax-container {
+  min-height: 450px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+
+.parallax-container .section {
+  width: 100%;
+}
+
+#logo-cubitcode img {
+    /*coloca el logo encima*/
+    width: 72px;
+    height: 62px;
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+    
+}
+
+.sombra_imagen {
+  background: rgba(85, 90, 90, 0.4) ;
+}
+
+.texto_negrita {
+  font-weight: bold;
+}
+
+.info__titulo {
+  font-size: 40px;
+  text-align: center;
+}
+
+.info, .soluciones {
+  display: flex;
+  /*da un espacio entre columnas*/
+  justify-content: space-between;
+  margin-top: -60px;
+  height: 450px;
+}
+
+
+
+
+.info__titulo {
+
+  margin: 10px 0px;
+}
+
+img.alineadoTextoImagenCentro {
+  vertical-align: middle;
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
+
+@media only screen and (max-width : 1400px) {
+
+}
+
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+  .full_screem {
+    height: 350px;
+  }
+
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+
+  #logo-cubitcode img {
+    /*coloca el logo encima*/
+    width: 54px;
+    height: 54px;
+    
+  }
+
+  .full_screem {
+    height: 350px;
+  }
+
+}
+
+@media only screen and (max-width : 400px) {
+  #logo-cubitcode img {
+    /*coloca el logo encima*/
+    width: 54px;
+    height: 54px;
+    
+  }
+
+  .full_screem {
+    height: 350px;
+  }
+  
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+.full_img {
+  height: 350px;
+}
+
+.social {
+  
+  margin: 0 1px;
+}
+
+.c_social_nav {
+  
+  display: inline-block;
+
+  text-decoration: none;
+  font-size: 35px;
+  
+  background: #fff; 
+
+  width: 35px;
+  height: 0;
+  
+}
+
+/* Nuevos cambios  */
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  
+  display: block;
+  border: none;
+  background: none;
+  width:100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container{
+  display: none;
+  
+  padding-left: 8px;
+}
+
+#texto_comentario{
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.info, .soluciones {
+  display: flex;
+  /*da un espacio entre columnas*/
+  justify-content: space-between;
+  margin-top: -60px;
+}
+
+
+
+.info__titulo {
+  font-size: 28px;
+  margin: 10px 0px;
+}
+
+.soluciones {
+  /*lo que no puede entrar en el display: flex; se evita*/
+  flex-wrap: wrap;
+  margin-top: 0px;
+  
+}
+
+.soluciones__columna {
+  width: 49%;
+}
+
+/**************************************************************/
+/*slider_celulares*/
+
+#slider_container_cel{
+  width: 80%;
+}
+
+#slider_tamaño_cel{
+  width: auto;
+  height: 300px;
+
+}
+
+#icons_slider_cel{
+  height: 100px;
+  width: 100px;
+background-color:rgba(255,255,255,10.9);
+padding: 20px;
+-webkit-border-radius:100% ;
+-moz-border-radius:100% ;
+-ms-border-radius:100% ;
+-o-border-radius:100% ;
+border-radius:100% ;
+-webkit-box-shadow: 0px 0px 0px 50px rgba(255,255,255,0);
+-webkit-transition:box-shadow .5s;/*tiempo de la transicion*/
+transition: 0.4s;
+
+}
+p.texto__slider_cel{
+	font-size: 1em;
+  color:white;
+  font-weight: bold;
+	text-align: center;
+	opacity: .6;
+	-webkit-transition: padding-top .4s;
+}
+
+#icons_slider_cel:hover{
+  -webkit-box-shadow:0px 0px 0px 0px rgba(255,255,255,0.4);
+  -moz-box-shadow:0px 0px 0px 0px rgba(255,255,255,0.4);
+transform: translateY(-10px);
+
+}
+
+.slider_cel:hover{
+  opacity: 0.98;
+}
+
+
+/*Móviles: entre 320 y 480 píxeles.
+Tablets: entre 768 y 1024 píxeles.
+Pantallas grandes: más de 1200 píxeles.*/
+
+
+/*****************************************************************/
+/* Next & previous buttons */
+.prev{
+  cursor: pointer;
+  position: relative;
+  top: 80%;
+  margin:0 auto;
+  color: white;
+  font-weight: bold;
+  transition: 0.6s ease;
+  
+
+}
+
+.next{
+  cursor: pointer;
+  position: relative;
+  top: 80%;
+  width: auto;
+  margin:0 auto;
+  margin-left: 0px;
+  margin-right: 150px;
+  color: white;
+  transition: 0.6s ease;
+
+
+}
+/* On hover, add a black background color with a little bit see-through */
+i.prev:hover, i.next:hover {
+  background-color: rgba(255,255,255,0.4);
+
+}
+/*********************************/
+/*icons soluciones*/
+img#icons_soluciones{
+  height: 95px;
+  width: 95px;
+padding: 20px;
+border: solid 5px #01579b;
+-webkit-border-radius:100% ;
+-moz-border-radius:100% ;
+-ms-border-radius:100% ;
+-o-border-radius:100% ;
+border-radius:100% ;
+-webkit-box-shadow: 0px 0px 0px 30px rgba(255,255,255,0);
+-webkit-transition:box-shadow .5s;/*tiempo de la transicion*/
+transition: 0.4s;
+
+}
+img#icons_soluciones:hover{
+  -webkit-box-shadow:0px 0px 0px 0px rgba(5, 75, 141, 0.4);
+  -moz-box-shadow:0px 0px 0px 0px rgba(5, 75, 141, 0.4);
+transform: translateY(-5px)
+}
+
+/*icons soluciones mini*/
+img#icons_soluciones_tiny{
+  height: 35px;
+  width: 35px;
+padding: 3px;
+border: solid 1px #020202;
+-webkit-border-radius:100% ;
+-moz-border-radius:100% ;
+-ms-border-radius:100% ;
+-o-border-radius:100% ;
+border-radius:100% ;
+-webkit-box-shadow: 0px 0px 0px 10px rgba(255,255,255,0);
+-webkit-transition:box-shadow .5s;/*tiempo de la transicion*/
+transition: 0.4s;
+
+}
+img#icons_soluciones_tiny:hover{
+  -webkit-box-shadow:0px 0px 0px 0px rgba(5, 75, 141, 0.4);
+  -moz-box-shadow:0px 0px 0px 0px rgba(5, 75, 141, 0.4);
+transform: translateY(-5px)
+}
